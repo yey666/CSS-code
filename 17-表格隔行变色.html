@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表格隔行变色</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .data {
+      /* 合并相邻边框 */
+      border-collapse: collapse;
+      /* 边框 1像素  实践  颜色 */
+      border: 1px solid #f1f1f1;
+      width: 400px;
+      margin: 0 auto;
+      /* 居中 */
+      text-align: center;
+      font-size: 14px;
+    }
+    .data tr {
+      height: 35px;
+    }
+  
+    /* 让奇数行改为隔行变色 */
+    .data tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+      /* 表格第一行背景颜色 */
+    .data tr:first-child {
+      background-color: #8fbcf1!important;
+      color: #fff;
+    }
+    /* 鼠标经过改变背景颜色 */
+    .data tr:hover {
+      background-color: #f1f1f1;
+    }
+
+  </style>
+</head>
+<body>
+  <table border="1" class="data">
+    <tr>
+      <th>姓名</th>
+      <th>年龄</th>
+      <th>性别</th>
+    </tr>
+    <tr>
+      <td>张三</td>
+      <td>18</td>
+      <td>男</td>
+    </tr>
+    <tr>
+      <td>李四</td>
+      <td>20</td>
+      <td>女</td>
+    </tr>
+    <tr>
+      <td>王五</td>
+      <td>22</td>
+      <td>男</td>
+    </tr>
+  </table>
+</body>
+</html>

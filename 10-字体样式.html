@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字体样式</title>
+  <style>
+    /* 1.字体颜色 */
+    .pink {
+      color: pink;
+    }
+    .color16 {
+      color: #ff6699;
+    }
+    .rgb {
+      color: rgb(255, 10, 153);
+    }
+    /* 半透明，0是全透明，1是不透明 */
+    .rgba {
+      color: rgba(255, 10, 153, 0.3);
+      background-color: rgba(100, 10, 153, 0.3);
+    }
+    /* 2.字体族 */
+    .font {
+      font-family: courier New,Arial,serif;
+    }
+    /* 3.字体大小 */
+    .font12 {
+      font-size: 12px;
+    }
+    .font14 {
+      font-size: 14px;
+    }
+    .font16 {
+      font-size: 16px;
+    }
+    /* 4.字体样式 */
+    .italic {
+      font-style: italic;
+    }
+    .normal {
+      font-style: normal;
+    }
+    /* 5.字体粗细 */
+    .nobold {
+      font-weight: normal;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none;
+    }
+    .underline {
+      text-decoration: underline;
+    }
+    .overline {
+      text-decoration: overline;
+    }
+    .linethrough {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <!-- 字体样式 -->
+  <!-- 1.字体颜色 -->
+  <h2>1.字体颜色</h2>
+  <p class="pink">字体颜色可以使用颜色名称来设置。</p>
+  <p class="color16">字体颜色可以使用十六进制颜色值来设置。</p>
+  <p class="rgb">字体颜色可以使用rgb()函数来设置。</p>
+  <p class="rgba">字体颜色可以使用rgba()函数来设置颜色透明度。</p>
+  <!-- 2.字体族 -->
+   <h2>2.设置字体族</h2>
+   <p class="font">字体族可以使用font-family属性来设置。</p>
+   <p class="font">字体族可以使用字体名称、字体文件路径等。</p>
+   <!-- 3.字体大小 -->
+   <h2>3.设置字体大小</h2>
+   <p class="font12">字体大小可以使用font-size属性来设置。</p>
+   <p class="font14">字体大小可以使用像素值、百分比值、em值等。</p>
+   <p class="font16">字体大小可以使用rem值来设置。</p>
+   <!-- 4.字体样式与倾斜 -->
+    <h2>4.设置字体样式与倾斜</h2>
+    <p class="italic">字体样式可以使用font-style属性来设置。</p>
+    <p class="italic">字体样式可以使用关键字值来设置。</p>
+    <em class="normal">字体样式可以使用数字值来设置。</em>
+    <p class="italic">字体样式可以使用百分比值来设置。</p>
+    <p class="italic">字体样式可以使用em值来设置。</p>
+    <p class="italic">字体样式可以使用rem值来设置。</p>
+   <!-- 5.字体粗细 -->
+   <h2 class="nobold">5.设置字体粗细</h2>
+   <p class="bold">字体粗细可以使用font-weight属性来设置。</p>
+   <p class="bold">字体粗细可以使用数字值、关键字值等。</p>
+   <p class="bold">字体粗细可以使用百分比值来设置。</p>
+   <p class="bold">字体粗细可以使用em值来设置。</p>
+   <p class="bold">字体粗细可以使用rem值来设置。</p>
+   <!-- 6.字体装饰 -->
+   <h2>6.设置字体装饰</h2>
+   <p class="underline">字体装饰可以使用under-line下划线设置</p>
+   <p class="overline">字体装饰可以使用over-line上划线设置</p>
+   <p class="linethrough">字体装饰可以使用line-through删除线设置</p>
+   <a href="#">字体装饰可以使用none取消装饰设置</a>
+</body>
+</html>

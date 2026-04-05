@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本布局</title>
+  <style>
+    /* 文本布局 */
+    /* 1.文本对齐 块级元素 水平对齐 */
+  
+    .box {
+      width:120px;
+      height:50px;
+      background-color: pink;
+      text-align: center;
+      /* text-align: right; */
+      /* 3.文本间距 */
+      letter-spacing: 5px;
+      /* 行高等于盒子高度可以实现垂直居中 */
+      line-height: 50px;
+    }
+    p {
+      /* 两端对齐 */
+      text-align: justify;
+      /* 2.文本缩进 */
+      text-indent: 2em;
+      /* 4.文本行高 */
+      line-height: 30px;
+      /* line-height: 1.5;不带单位时表示行高是字体大小的1.5倍 */
+    }
+    /* 对strong这种行内元素无效 */
+    strong {
+      text-align: 2em;
+    }
+    
+    
+  </style>
+
+</head>
+<body>
+  <div class="box">电影</div>
+  <p>
+    电影是指在屏幕上显示的视频，通常由一个或多个视频轨道和一个或多个音频轨道组成。
+    电影的视频轨道通常包含一个或多个视频帧，每个视频帧都是一个静态的图像。
+    电影的音频轨道通常包含一个或多个音频帧，每个音频帧都是一个静态的音频信号。
+    电影的视频轨道和音频轨道通常以同步的方式播放，以创建一个完整的视频体验。
+  </p>
+  <p>
+    电影的视频轨道通常包含一个或多个视频帧，每个视频帧都是一个静态的图像。
+    电影的音频轨道通常包含一个或多个音频帧，每个音频帧都是一个静态的音频信号。
+    电影的视频轨道和音频轨道通常以同步的方式播放，以创建一个完整的视频体验。
+  </p>
+  <strong>
+    电影的视频轨道通常包含一个或多个视频帧，每个视频帧都是一个静态的图像。
+  </strong>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>兄弟选择器</title>
+  <style>
+    /* 邻接兄弟选择器 */
+    h2 ~ p {
+      color: rgb(93, 19, 162)
+    }
+    .sis ~ li {
+      color: rgb(136, 74, 74);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>我是第一个段落</p>
+    <p>我是第二个段落</p>
+    <p>我是第三个段落</p>
+    <h2>我是标题</h2>
+    <p>我是第四个段落</p>
+    <p>我是第五个段落</p>
+    <p>我是第六个段落</p>
+    <p>我是第七个段落</p>
+    
+  </div>
+  <ul>
+    <li>我是第一个列表项</li>
+    <li class="sis">我是第二个列表项</li>
+    <li>我是第三个列表项</li>
+    <li>我是第四个列表项</li>
+    <li>我是第五个列表项</li>
+  </ul>
+</body>
+</html>

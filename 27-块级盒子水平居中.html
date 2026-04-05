@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>块级盒子水平居中</title>
+  <style>
+    [class^="box"]{
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+    .box1 {
+      /* 左右设置为auto就可以水平居中 */
+      margin: 0 auto;/*B站 */
+      /* margin: auto;京东 */
+      /* margin-left: auto;小米
+      margin-right: auto; */
+    }
+    .box2 {
+      background-color: aquamarine;
+      margin-left: auto;
+    }
+    .box3 {
+      margin-right: auto;
+    }
+    /* .span {
+      margin: 0 auto;
+    } */
+     /* 行内盒子给他加一个块级盒子，然后让块级盒子水平居中就能实现行内盒子水平居中 */
+    p {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">第一个盒子</div>
+  <div class="box2">第二个盒子</div>
+  <div class="box3">第三个盒子</div>
+
+  <p><span class="span">第四个盒子</span></p>
+
+
+
+</body>
+</html>

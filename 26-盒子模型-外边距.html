@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盒子模型-外边距</title>
+  <style>
+    [class^="box"] {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+     
+    }
+    .box1 {
+      /* margin: 10px; */
+      /* margin: 10px 20px; */
+      /* margin: 10px 20px 30px ; */
+      /* margin: 10px 20px 30px 40px; */
+      margin-bottom: 10px;
+      
+      
+    }
+    .box2 {
+      background-color: aquamarine;
+     
+    }
+    .span {
+      /* 1. 行内元素不能设置宽度和高度 */
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      /* 2.行内盒子上下外边距无效 左右有效 */
+      margin: 10px 20px;
+      /* 3.行内盒子内边距和边框有效 */
+      padding: 10px;
+      border: 5px solid #d9e0ee;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">第一个盒子</div>
+  <div class="box2">第二个盒子</div>
+  <span class="span">行内盒子</span>
+  <span class="span">行内盒子</span>
+</body>
+</html>

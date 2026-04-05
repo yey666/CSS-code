@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>伪元素选择器</title>
+  <style>
+    /* 选择首行 */
+    p::first-line {
+      color: #ff6900;
+    }
+    /* 选择首字母 */
+    p::first-letter {
+      color: red;
+    }
+    textarea::placeholder {
+      color: #ff6900;
+      font-size: 12px;
+    }
+    /* before和after伪元素 */
+    div::before {
+      content: '我是';
+      color: #ff6900;
+      
+    }
+    div::after {
+      content: '我是after';
+      color: #ff6900;
+      
+    }
+
+  </style>
+</head>
+<body>
+  <p>
+    伪元素选择器：
+    1.伪元素选择器是通过元素的特殊状态来选择元素的
+    2.伪元素选择器只能选择元素的特殊状态，不能选择元素的属性
+    3.伪元素选择器只能选择元素的特殊状态，不能选择元素的属性
+  </p>
+  <textarea name="",id="" placeholder="请输入内容"></textarea>
+  <div class="box">pink</div>
+</body>
+</html>
