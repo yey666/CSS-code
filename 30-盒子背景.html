@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盒子背景</title>
+  <style>
+    body {
+      height: 3000px;
+    }
+    
+    .box {
+    width: 500px;
+    height: 500px;
+    background-color: pink;
+    /* 背景图片 */
+    /* background-image: url(./img/07.jpg); */
+    /* 背景平铺 */
+    /* background-repeat: no-repeat; */
+      /* background-repeat: repeat-x;*/
+      /* background-repeat: repeat-y; */
+      
+    /* 背景位置 */
+    /* background-position: 50px 10px; */
+    /* background-position: 50% 50%; */
+    /* 方位名词 top bottom left right center  */
+    /* background-position: left top; */
+    /* background-position: right bottom; */
+    /* 如果只写一个值，那么第二个值即y值省略了 */
+    /* background-position:  center; */
+
+    /* 背景缩放 */
+    /* background-size: cover;背景图片拉伸到盒子大小，把盒子覆盖了 */
+    /* background-size: contain;显示了整个图片，不在乎盒子是否露出或隐藏 */
+    /* background-size: 300px; */
+
+    /* 背景固定 fixed是相对于当前视口来移动位置的  图片会固定在当前视口的中间位置*/
+    /* background-attachment: fixed; */
+    /* background-attachment: scroll; */
+      /* 复合写法 */
+      background: pink url(./img/07.jpg) no-repeat center center / 300px;
+  }
+    
+  </style>
+  
+</head>
+<body>
+  <div class="box">123
+  </div>
+</body>
+</html>
