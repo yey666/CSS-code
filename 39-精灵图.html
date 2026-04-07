@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>精灵图</title>
+  <style>
+    .box {
+      width: 27px;
+      height: 26px;
+      /* 精灵图的核心是作为背景 */
+      background: url(./img/wz.webp) no-repeat;
+    }
+    .box1 {
+      background-position: 0 -169px;
+    }
+    .box2 {
+      background-position: -89px -170px;
+      margin: 100px auto;
+      /* 背景会跟着盒子移动 */
+    }
+  </style>
+</head>
+<body>
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+</body>
+</html>
