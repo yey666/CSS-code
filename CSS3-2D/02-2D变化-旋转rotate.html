@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2D变化-旋转rotate</title>
+  <style>
+    /* 行内元素无法直接做旋转效果，需要转换行内块或者块级元素 */
+    img{
+      width: 200px;
+      border-radius: 50%;
+      border: 1px solid #000;
+      margin: 130px;
+      /* 过渡写到元素身上，悬停时旋转，鼠标离开时也会旋转 */
+      /* transition: all 1s; */
+      /* 左上角 */
+      transform-origin: top;
+    }
+
+    img:hover {
+      transform: rotate(360deg);
+      /* 过渡写到hover里面的话：只有鼠标悬停在图片上才会旋转 鼠标离开后瞬间复原的 */
+      transition: all 1s;
+    }
+  </style>
+</head>
+<body>
+  <img src="./img/ldh.webp" alt="">
+</body>
+</html>

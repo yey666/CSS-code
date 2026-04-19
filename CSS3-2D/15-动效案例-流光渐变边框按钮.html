@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>流光渐变边框按钮</title>
+  <style>
+    body {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+    }
+    .btn1 {
+      overflow: hidden;
+      position: relative;
+      display: block;
+      width: 140px;
+      height: 60px;
+      margin: 100px;
+      padding: 3px;
+      border-radius: 6px;
+      text-align: center;
+      line-height: 57px;
+      background-color: pink;
+    }
+
+    /* 彩色盒子 */
+    /* ::before 就是在元素里面、内容前面，凭空造出一个虚拟的盒子，方便你做装饰，而不用在 HTML 里多写一个标签。 */
+    .btn1::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 100%;
+      background: #fff;
+      /* 添加线性渐变 */
+      background: linear-gradient(45deg, #4FCF70, #FAD648,#A767E5,#12BCFE,#44CE7B);
+      background-size: 50% 100%;
+      /* 动画 */
+      animation: move .7s linear infinite;
+    }
+    @keyframes move {
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .btn1 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      border-radius: 3px;
+    }
+
+    /* 方式二 */
+    .btn2 {
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 300px;
+      height: 200px;
+      border: 1px solid #333;
+      border-radius: 10px;
+      margin: 50px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      line-height: 200px;
+    }
+
+    /* 径向渐变的盒子 before */
+    .btn2::before {
+      content: '';
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background-image: conic-gradient(transparent, transparent, transparent, #00ccff);
+      /* 动画 */
+      animation: rotate 1s linear infinite;
+      z-index: -1;
+    }
+
+    /* 黑色遮挡的盒子 */
+    .btn2::after {
+      content: '';
+      position: absolute;
+      /* top: 3px;
+      left: 3px;
+      right: 3px;
+      bottom: 3px; */
+      /* 新的写法 inset是针对定位盒子的写法 */
+      inset: 3px;
+      background-color: #000;
+      border-radius: 10px;
+      z-index: -1;
+    }
+
+    @keyframes rotate {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 方式一 -->
+  <a href="#" class="btn1">
+    <span>开始按钮</span>
+  </a>
+
+  <!-- 方式二 -->
+   <div class="btn2">渐变边框</div>
+</body>
+</html>

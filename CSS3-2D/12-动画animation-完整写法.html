@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>动画animation-完整写法</title>
+  <style>
+    body {
+      background-color: #ccc;
+    }
+    /* 1.定义动画 */
+    @keyframes move {
+      0% {
+        transform: translate(0,0);
+      }
+      100% {
+        transform: translate(300px,0);
+      }
+     
+    }
+    /* 2.使用动画 */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: pink;
+      /* animation: 动画名称 动画时间 速度曲线 延迟时间 播放次数 播放方向 执行完毕后状态; */
+      /* alternate: 动画播放方向 从头到尾 从尾到头 */
+      /* animation: move 1s ease 0s infinite alternate; */
+      animation: move 1s ease 0s forwards;
+    }
+
+    /* 1.定义动画 */
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    /* 2.调用动画 */
+    img.circle {
+      animation: rotate 1s linear infinite;
+    }
+
+    .circle:hover {
+      /* 鼠标悬停时暂停动画 */
+      animation-play-state: paused;
+    }
+
+    /* 1.定义动画 */
+    @keyframes scrollTip {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(10px);
+      }
+    }
+    /* 2.调用动画 */
+    img.square {
+      animation: scrollTip .5s linear infinite alternate;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <img src="./img/circle.png" alt="" class="circle">
+  <img src="./img/scrollTip.png" alt="" class="square">
+</body>
+</html>
